@@ -1,0 +1,22 @@
+// colors
+$accent-blue-1: #5490d9;
+$accent-blue-2: darken($accent-blue-1, 10%);
+$accent-turquoise-1: #62dfdf;
+$accent-turquoise-2: darken($accent-turquoise-1, 10%);
+
+// themes colors
+body {
+  --level-a-foreground-1: #fafafa;
+  --level-a-foreground-2: #f0f0f0;
+
+  --level-b-background-1: #fafafa;
+  --level-b-background-2: #f0f0f0;
+  --level-b-foreground-1: #333333;
+  --level-b-foreground-2: #5c5c5c;
+
+  --accent-primary-1: #{$accent-blue-1};
+  --accent-primary-2: #{$accent-blue-2};
+
+  --accent-secondary-1: #{$accent-turquoise-1};
+  --accent-secondary-2: #{$accent-turquoise-2};
+}

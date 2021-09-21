@@ -1,6 +1,41 @@
+// main
 body {
   margin: 0;
   min-height: 100vh;
   font-family: "Montserrat";
   font-size: 14px;
+}
+
+// elements
+.btn {
+  background: transparent;
+  border: none;
+  outline: none;
+  cursor: pointer;
+
+  &--glass {
+    transition: 150ms ease-in-out background;
+
+    &:hover {
+      background: #ffffff1a;
+    }
+  }
+}
+
+// webkit
+::-webkit-scrollbar {
+  width: 10px;
+
+  &-track {
+    background: var(--accent-secondary-2);
+  }
+
+  &-thumb {
+    width: 8px;
+    background: var(--accent-secondary-1);
+
+    &:hover {
+      background: var(--accent-primary-1);
+    }
+  }
 }

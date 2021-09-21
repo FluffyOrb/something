@@ -1,5 +1,7 @@
+@import "/src/styles/app-consts.scss";
+
 .main-container {
-  padding: 2rem;
+  padding: ($header-height + 2rem) 2rem 2rem 2rem;
   min-height: 100vh;
   display: flex;
   flex-flow: column;
