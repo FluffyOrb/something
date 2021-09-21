@@ -1,0 +1,22 @@
+.main-container {
+  padding: 2rem;
+  min-height: 100vh;
+  display: flex;
+  flex-flow: column;
+}
+
+header {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  z-index: 10;
+}
+
+.content-container {
+  flex: 1 1 100%;
+}
+
+footer {
+  margin-top: 2rem;
+}
