@@ -1,0 +1,16 @@
+.p-sidebar.sidebar--global {
+  width: 25vw;
+  min-width: 20rem;
+  padding: 0;
+  color: var(--level-a-foreground-1);
+  background: var(--accent-primary-2);
+
+  .p-sidebar-header {
+    display: none;
+  }
+
+  .p-sidebar-content {
+    height: 100%;
+    padding: 0;
+  }
+}

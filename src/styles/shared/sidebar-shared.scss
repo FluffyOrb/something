@@ -1,0 +1,30 @@
+.sidebar {
+  height: 100%;
+  display: flex;
+  flex-flow: column;
+
+  &__header {
+    $header-font-size: 1.6rem;
+    flex-shrink: 0;
+    padding: 1rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background: linear-gradient(to right, var(--accent-primary-1), var(--accent-secondary-1));
+    font-size: $header-font-size;
+    font-weight: 600;
+
+    .btn--close {
+      padding: 1rem;
+      color: var(--level-a-foreground-1);
+      font-size: $header-font-size;
+    }
+  }
+
+  &__content {
+    padding: 1rem;
+    flex: 1 1 auto;
+    background: linear-gradient(to right, var(--accent-primary-2), var(--accent-secondary-2));
+    overflow: auto;
+  }
+}

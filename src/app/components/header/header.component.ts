@@ -30,7 +30,7 @@ export class HeaderComponent implements OnDestroy {
   }
 
   onSidebarMenuOpen() {
-    // todo open menu sidebar
+    this.menuService.sidebarOpen = true;
   }
 
   onSidebarNotificationOpen() {

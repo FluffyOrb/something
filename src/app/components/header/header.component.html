@@ -1,28 +1,28 @@
-<div class="header" [class.header--small]="headerSmall$ | async">
+<div class="header box-shadow--2" [class.header--small]="headerSmall$ | async">
   <div class="header__section">
-    <div class="logo">
+    <div class="logo text-shadow--1">
       <!-- todo add logo -->
       SOME<br>THING
     </div>
   </div>
   <div class="header__section header--narrow">
-    <button class="btn btn--glass menu__btn" (click)="onSidebarMenuOpen()">
+    <button class="menu__btn btn btn--glass border-radius--1 text-shadow--1" (click)="onSidebarMenuOpen()">
       <i class="menu__btn__icon fas fa-bars"></i>
       <span class="menu__btn__label">Menu</span>
     </button>
   </div>
   <div class="header__section header--wide">
-    <a *ngFor="let menuItem of menuService.menuItems" class="menu__btn"
+    <a *ngFor="let menuItem of menuService.menuItems" class="menu__btn btn btn--glass border-radius--1 text-shadow--1"
       [class.menu__btn--active]="(menuService.menuActiveRoute$ | async) === menuItem.routerLink" [routerLink]="menuItem.routerLink">
       <i class="menu__btn__icon" [class]="menuItem.icon"></i>
       <span class="menu__btn__label">{{menuItem.label | titlecase}}</span>
     </a>
   </div>
   <div class="header__section header__section--last">
-    <button class="btn btn--glass menu__btn" (click)="onSidebarNotificationOpen()">
+    <button class="menu__btn btn btn--glass border-radius--1 text-shadow--1" (click)="onSidebarNotificationOpen()">
       <i class="menu__btn__icon fas fa-bell"></i>
     </button>
-    <button class="btn btn--glass menu__btn" (click)="onSidebarSettingsOpen()">
+    <button class="menu__btn btn btn--glass border-radius--1 text-shadow--1" (click)="onSidebarSettingsOpen()">
       <i class="menu__btn__icon fas fa-cog"></i>
     </button>
   </div>

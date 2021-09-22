@@ -22,6 +22,21 @@ body {
   }
 }
 
+// decorations
+@for $level from 1 through 3 {
+  .box-shadow--#{$level} {
+    box-shadow: #00000026 0px $level * 3px $level * 3px 0px;
+  }
+
+  .border-radius--#{$level} {
+    border-radius: $level * 4px;
+  }
+
+  .text-shadow--#{$level} {
+    text-shadow: 1px 1px 2px #333333;
+  }
+}
+
 // webkit
 ::-webkit-scrollbar {
   width: 10px;

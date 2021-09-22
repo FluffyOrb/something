@@ -16,6 +16,8 @@ export class MenuService {
 
   readonly menuActiveRoute$: Observable<string>;
 
+  sidebarOpen = false;
+
   constructor(
     private readonly router: Router,
   ) {

@@ -1,0 +1,24 @@
+@import "/src/styles/shared/sidebar-shared.scss";
+@import "/src/styles/shared/menu-shared.scss";
+
+.sidebar__content {
+  display: flex;
+  flex-flow: column;
+  gap: 0.5rem;
+}
+
+.menu__btn {
+  padding: 1.4rem;
+  display: flex;
+  align-items: center;
+  font-size: 1.4rem;
+
+  &__icon {
+    flex-basis: 3rem;
+    font-size: 2rem;
+  }
+
+  &__label {
+    font-size: 1.6rem;
+  }
+}

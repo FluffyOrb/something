@@ -1,0 +1,21 @@
+<p-sidebar styleClass="sidebar--global" [(visible)]="menuService.sidebarOpen" position="left" appendTo="body" [showCloseIcon]="false">
+  <div class="sidebar text-shadow--1">
+    <div class="sidebar__header box-shadow--1">
+      <span>
+        <i class="fas fa-bars"></i>
+        Menu
+      </span>
+      <button class="btn btn--glass btn--close border-radius--1 text-shadow--1" (click)="onSidebarClose()">
+        <i class="fas fa-times-circle"></i>
+      </button>
+    </div>
+    <div class="sidebar__content">
+      <a class="menu__btn btn btn--glass border-radius--1" *ngFor="let menuItem of menuService.menuItems"
+        [class.menu__btn--active]="(menuService.menuActiveRoute$ | async) === menuItem.routerLink"
+        [routerLink]="menuItem.routerLink" (click)="onSidebarClose()">
+        <i class="menu__btn__icon" [class]="menuItem.icon"></i>
+        <span class="menu__btn__label">{{menuItem.label | titlecase}}</span>
+      </a>
+    </div>
+  </div>
+</p-sidebar>
