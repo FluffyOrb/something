@@ -1,6 +1,8 @@
 @import "/src/styles/app-consts.scss";
 
 .main-container {
+  max-width: $app-max-width;
+  margin: 0 auto;
   padding: ($header-height + 2rem) 2rem 2rem 2rem;
   min-height: 100vh;
   display: flex;

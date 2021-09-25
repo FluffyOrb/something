@@ -47,6 +47,8 @@
 
 .header {
   height: $header-height;
+  max-width: $app-max-width;
+  margin: 0 auto;
   padding: 0 1rem;
   display: flex;
   align-items: stretch;

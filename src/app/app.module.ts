@@ -9,7 +9,6 @@ import { HeaderComponent } from './components/header/header.component';
 import { HomeComponent } from './components/home/home.component';
 import { SidebarMenuComponent } from './components/sidebar-menu/sidebar-menu.component';
 
-
 @NgModule({
   declarations: [
     AppComponent,
