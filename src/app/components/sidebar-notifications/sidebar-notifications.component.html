@@ -1,0 +1,32 @@
+<p-sidebar styleClass="sidebar--global" [(visible)]="notificationsService.sidebarOpen" position="right" appendTo="body" [showCloseIcon]="false">
+  <div class="sidebar">
+    <div class="sidebar__header box-shadow--1 text-shadow--1">
+      <span>
+        <i class="fas fa-bell"></i>
+        Notifications
+      </span>
+      <button class="btn btn--glass btn--close border-radius--1 text-shadow--1" (click)="onSidebarClose()">
+        <i class="fas fa-times-circle"></i>
+      </button>
+    </div>
+    <div class="sidebar__content">
+      <div class="tile border-radius--1 box-shadow--1" *ngFor="let notification of notificationsService.notifications">
+        <div class="tile-content">
+          <div class="notification">
+            <div class="notification__header">
+              <i class="notification__icon" [ngClass]="notification.level | levelIcon"></i>
+              <div class="notification__message">{{notification.message}}</div>
+              <div class="notification__timestamp">{{notification.timestamp | date:'shortTime'}}</div>
+              <button pButton class="p-button-rounded p-button-danger p-button-text notification__button" type="button"
+                icon="fas fa-times" (click)="onClearNotification(notification.uid)"></button>
+            </div>
+            <div class="notification__details">{{notification.details}}</div>
+          </div>
+        </div>
+      </div>
+      <div *ngIf="!notificationsService.notifications.length">
+        No notifications
+      </div>
+    </div>
+  </div>
+</p-sidebar>

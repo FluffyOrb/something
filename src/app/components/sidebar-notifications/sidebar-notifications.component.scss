@@ -1,0 +1,41 @@
+@import "/src/styles/shared/sidebar-shared.scss";
+
+.sidebar__content {
+  display: flex;
+  flex-flow: column;
+  gap: 1rem;
+}
+
+.notification {
+  &__header {
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+    border-bottom: 1px solid var(--level-b-foreground-2);
+    margin-bottom: 0.5rem;
+  }
+
+  &__icon {
+    font-size: 1.2rem;
+  }
+
+  &__message {
+    flex: 1 1 auto;
+    font-weight: 600;
+  }
+
+  &__timestamp {
+    font-size: 0.8rem;
+    white-space: nowrap;
+  }
+
+  &__button {
+    flex: 0 0 auto;
+  }
+
+  &__details {
+    flex: 1 1 auto;
+    color: var(--level-b-foreground-2);
+    white-space: pre-wrap;
+  }
+}

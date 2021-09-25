@@ -2,6 +2,7 @@ import { Component, OnDestroy } from '@angular/core';
 import { fromEvent, Observable, Subject } from 'rxjs';
 import { map, takeUntil } from 'rxjs/operators';
 import { MenuService } from 'src/app/services/menu/menu.service';
+import { NotificationsService } from './../../services/notifications/notifications.service';
 
 @Component({
   selector: 'app-header',
@@ -18,6 +19,7 @@ export class HeaderComponent implements OnDestroy {
 
   constructor(
     public readonly menuService: MenuService,
+    public readonly notificationsService: NotificationsService,
   ) {
     this.headerSmall$ = fromEvent(window, 'scroll').pipe(
       takeUntil(this.kill$),
@@ -34,7 +36,7 @@ export class HeaderComponent implements OnDestroy {
   }
 
   onSidebarNotificationOpen() {
-    // todo open notification sidebar
+    this.notificationsService.sidebarOpen = true;
   }
 
   onSidebarSettingsOpen() {

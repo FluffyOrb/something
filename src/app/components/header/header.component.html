@@ -19,8 +19,13 @@
     </a>
   </div>
   <div class="header__section header__section--last">
-    <button class="menu__btn btn btn--glass border-radius--1 text-shadow--1" (click)="onSidebarNotificationOpen()">
-      <i class="menu__btn__icon fas fa-bell"></i>
+    <button class="menu__btn btn btn--glass border-radius--1 text-shadow--1"
+      pTooltip="Notifications" tooltipPosition="bottom" (click)="onSidebarNotificationOpen()">
+      <i class="menu__btn__icon fas fa-bell" pBadge severity="danger"
+        *ngIf="notificationsService.notifications.length as notificationCount; else noNotifications" value="{{notificationCount}}"></i>
+      <ng-template #noNotifications>
+        <i class="menu__btn__icon fas fa-bell"></i>
+      </ng-template>
     </button>
     <button class="menu__btn btn btn--glass border-radius--1 text-shadow--1" (click)="onSidebarSettingsOpen()">
       <i class="menu__btn__icon fas fa-cog"></i>

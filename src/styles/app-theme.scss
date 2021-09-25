@@ -28,13 +28,14 @@ body {
   display: flex;
   flex-wrap: wrap;
   gap: 1rem;
+}
 
-  .tile {
-    background: var(--level-b-background-1);
+.tile {
+  background: var(--level-b-background-1);
+  color: var(--level-b-foreground-1);
 
-    .tile-content {
-      margin: 1rem;
-    }
+  .tile-content {
+    margin: 1rem;
   }
 }
 
