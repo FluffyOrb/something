@@ -1,0 +1,10 @@
+@import "/src/styles/shared/sidebar-shared.scss";
+
+.option-theme:before {
+  display: inline-block;
+  content: "";
+  width: 1rem;
+  height: 1rem;
+  margin-right: 0.5rem;
+  background: linear-gradient(90deg, var(--accent-primary-1), var(--accent-secondary-1));
+}

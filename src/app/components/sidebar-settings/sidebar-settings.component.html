@@ -1,0 +1,30 @@
+<p-sidebar styleClass="sidebar--global" [(visible)]="settingsService.sidebarOpen" position="right" appendTo="body" [showCloseIcon]="false">
+  <div class="sidebar">
+    <div class="sidebar__header text-shadow--1">
+      <span>
+        <i class="fas fa-cog"></i>
+        Settings
+      </span>
+      <button class="btn btn--close" type="button" (click)="onSidebarClose()">
+        <i class="fas fa-times-circle"></i>
+      </button>
+    </div>
+    <div class="sidebar__content">
+      <div class="field grid">
+        <label for="theme" class="col-fixed mb-0">Theme</label>
+        <div class="col">
+          <p-dropdown inputId="theme" [options]="THEME_OPTIONS"
+            [ngModel]="themeService.theme$ | async" (ngModelChange)="onThemeChange($event)">
+            <ng-template let-theme pTemplate="selectedItem">
+              <span class="option-theme" [class]="theme.value">{{theme.label}}</span>
+            </ng-template>
+            <ng-template let-theme pTemplate="item">
+              <span class="option-theme" [class]="theme.value">{{theme.label}}</span>
+            </ng-template>
+          </p-dropdown>
+        </div>
+      </div>
+
+    </div>
+  </div>
+</p-sidebar>

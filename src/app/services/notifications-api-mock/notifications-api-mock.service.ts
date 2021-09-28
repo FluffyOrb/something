@@ -1,7 +1,6 @@
 import { Injectable } from '@angular/core';
 import * as faker from 'faker';
-import { interval, merge, Observable } from 'rxjs';
-import { Subject } from 'rxjs/internal/Subject';
+import { interval, merge, Observable, Subject } from 'rxjs';
 import { map, switchMap, take } from 'rxjs/operators';
 import { Level } from 'src/app/models/api.model';
 import * as uuid from 'uuid';
