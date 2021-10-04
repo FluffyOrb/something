@@ -26,7 +26,7 @@ $accent-violet-2: darken($accent-violet-1, 10%);
     --accent-secondary-1: #{$accent-turquoise-1};
     --accent-secondary-2: #{$accent-turquoise-2};
 
-    --accent-colot-transition: #333333;
+    --accent-color-text-shadow: #333333;
   }
 
   &--dark-violet {
@@ -44,6 +44,6 @@ $accent-violet-2: darken($accent-violet-1, 10%);
     --accent-secondary-1: #{$accent-violet-1};
     --accent-secondary-2: #{$accent-violet-2};
 
-    --accent-colot-transition: #333333;
+    --accent-color-text-shadow: #333333;
   }
 }
