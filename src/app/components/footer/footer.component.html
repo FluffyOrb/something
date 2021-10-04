@@ -1,8 +1,12 @@
 <div class="tile-container">
   <div class="tile box-shadow--2 border-radius--1">
     <div class="tile-content">
-      <!-- todo footer -->
-      <h3>Footer</h3>
+      <div class="footer-content">
+        <span>{{APP_NAME}} by {{APP_CREATOR}}</span>
+        <a [href]="APP_CREATOR_GITHUB_URL" target="_blank" rel="nofollow">
+          <i class="icon-link fab fa-github"></i>
+        </a>
+      </div>
     </div>
   </div>
 </div>

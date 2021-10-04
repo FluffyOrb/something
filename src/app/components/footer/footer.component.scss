@@ -1,3 +1,15 @@
 .tile {
   flex: 1;
 }
+
+.footer-content {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.icon-link {
+  color: var(--level-b-foreground-1);
+  font-size: 1.6rem;
+  text-decoration: none;
+}

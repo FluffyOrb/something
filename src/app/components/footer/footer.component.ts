@@ -1,15 +1,15 @@
-import { Component, OnInit } from '@angular/core';
+import { Component } from '@angular/core';
+import { AppConsts } from 'src/app/consts/app.consts';
 
 @Component({
   selector: 'app-footer',
   templateUrl: './footer.component.html',
   styleUrls: ['./footer.component.scss']
 })
-export class FooterComponent implements OnInit {
+export class FooterComponent {
 
-  constructor() { }
-
-  ngOnInit(): void {
-  }
+  readonly APP_NAME = AppConsts.APP_NAME;
+  readonly APP_CREATOR = AppConsts.APP_CREATOR;
+  readonly APP_CREATOR_GITHUB_URL = AppConsts.APP_CREATOR_GITHUB_URL;
 
 }
