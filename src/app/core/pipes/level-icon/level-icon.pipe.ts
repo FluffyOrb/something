@@ -1,5 +1,5 @@
 import { Pipe, PipeTransform } from '@angular/core';
-import { Level } from 'src/app/models/api.model';
+import { Level } from '../../models/api.model';
 
 @Pipe({
   name: 'levelIcon'

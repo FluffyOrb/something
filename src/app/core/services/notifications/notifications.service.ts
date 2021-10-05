@@ -1,6 +1,6 @@
 import { Injectable } from '@angular/core';
 import { Observable } from 'rxjs';
-import { NotificationResponse } from 'src/app/models/notification-api.model';
+import { NotificationResponse } from '../../models/notification-api.model';
 import { NotificationsApiMockService } from '../notifications-api-mock/notifications-api-mock.service';
 
 @Injectable({

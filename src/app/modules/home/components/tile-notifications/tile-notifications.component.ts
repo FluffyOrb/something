@@ -1,5 +1,5 @@
-import { Component, OnInit } from '@angular/core';
-import { NotificationsApiMockService } from 'src/app/services/notifications-api-mock/notifications-api-mock.service';
+import { Component } from '@angular/core';
+import { NotificationsApiMockService } from 'src/app/core/services/notifications-api-mock/notifications-api-mock.service';
 
 @Component({
   selector: 'app-tile-notifications',

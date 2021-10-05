@@ -1,5 +1,5 @@
 import { Injectable } from '@angular/core';
-import { ThemeService } from 'src/app/services/theme/theme.service';
+import { ThemeService } from '../theme/theme.service';
 
 @Injectable({
   providedIn: 'root'

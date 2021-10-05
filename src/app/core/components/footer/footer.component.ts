@@ -1,5 +1,5 @@
 import { Component } from '@angular/core';
-import { AppConsts } from 'src/app/consts/app.consts';
+import { AppConsts } from '../../consts/app.consts';
 
 @Component({
   selector: 'app-footer',

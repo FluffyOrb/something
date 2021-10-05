@@ -1,5 +1,5 @@
 import { Component } from '@angular/core';
-import { MenuService } from 'src/app/services/menu/menu.service';
+import { MenuService } from '../../services/menu/menu.service';
 
 @Component({
   selector: 'app-sidebar-menu',

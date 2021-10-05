@@ -1,5 +1,5 @@
 import { Component } from '@angular/core';
-import { NotificationsService } from 'src/app/services/notifications/notifications.service';
+import { NotificationsService } from '../../services/notifications/notifications.service';
 
 @Component({
   selector: 'app-sidebar-notifications',

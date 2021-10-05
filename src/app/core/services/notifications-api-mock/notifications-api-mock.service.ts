@@ -2,10 +2,10 @@ import { Injectable } from '@angular/core';
 import * as faker from 'faker';
 import { interval, merge, Observable, Subject } from 'rxjs';
 import { map, switchMap, take } from 'rxjs/operators';
-import { Level } from 'src/app/models/api.model';
+import { Level } from 'src/app/core/models/api.model';
 import * as uuid from 'uuid';
 import { NotificationResponse } from '../../models/notification-api.model';
-import { UtilsService } from '../utils.service';
+import { UtilsService } from '../utils/utils.service';
 
 /**
  * Mocks data you would normally retrieve from backend service using e.g. websocket

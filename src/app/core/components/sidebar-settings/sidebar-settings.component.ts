@@ -1,8 +1,8 @@
 import { Component } from '@angular/core';
 import { SelectItem } from 'primeng/api';
-import { AppTheme } from 'src/app/models/theme.model';
-import { SettingsService } from 'src/app/services/settings/settings.service';
-import { ThemeService } from 'src/app/services/theme/theme.service';
+import { AppTheme } from 'src/app/core/models/theme.model';
+import { SettingsService } from '../../services/settings/settings.service';
+import { ThemeService } from '../../services/theme/theme.service';
 
 @Component({
   selector: 'app-sidebar-settings',

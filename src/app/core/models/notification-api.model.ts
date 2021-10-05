@@ -1,4 +1,4 @@
-import { Level } from 'src/app/models/api.model';
+import { Level } from './api.model';
 
 export interface NotificationResponse {
   uid: string;
