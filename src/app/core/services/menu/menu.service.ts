@@ -10,7 +10,8 @@ import { filter, map } from 'rxjs/operators';
 export class MenuService {
 
   readonly menuItems: MenuItem[] = [
-    { label: 'home', icon: 'fas fa-tachometer-alt', routerLink: 'home' },
+    { label: 'home', icon: 'fas fa-home', routerLink: 'home' },
+    { label: 'features', icon: 'fas fa-shapes', routerLink: 'features' },
     { label: 'faq', icon: 'fas fa-question-circle', routerLink: 'faq' },
   ];
 

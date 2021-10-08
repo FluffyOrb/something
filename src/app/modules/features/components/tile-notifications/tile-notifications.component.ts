@@ -1,4 +1,5 @@
 import { Component } from '@angular/core';
+import { AppConsts } from 'src/app/core/consts/app.consts';
 import { NotificationsApiMockService } from 'src/app/core/services/notifications-api-mock/notifications-api-mock.service';
 
 @Component({
@@ -7,6 +8,8 @@ import { NotificationsApiMockService } from 'src/app/core/services/notifications
   styleUrls: ['./tile-notifications.component.scss']
 })
 export class TileNotificationsComponent {
+
+  readonly APP_NAME = AppConsts.APP_NAME;
 
   constructor(
     private notificationsApiMockService: NotificationsApiMockService

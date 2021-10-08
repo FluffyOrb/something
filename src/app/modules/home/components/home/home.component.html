@@ -1,14 +1,9 @@
-<div class="tile-container">
-  <div class="tile box-shadow--2 border-radius--1">
-    <div class="tile-content">
-      <h3>Example tile</h3>
-      <div>content</div>
-    </div>
+<div class="welcome-container">
+  <img class="logo" src="assets\images\something-logo-light.svg">
+  <div class="welcome-text">
+    <span class="primary-text">Welcome to {{APP_NAME}}</span>
+    <span class="secondary-text">A place where you can play with various features</span>
   </div>
-  <div class="tile box-shadow--2 border-radius--1">
-    <div class="tile-content">
-      <h3>SOMETHING stays alert</h3>
-      <app-tile-notifications></app-tile-notifications>
-    </div>
-  </div>
+  <button pButton type="button" class="p-button-lg p-button-raised" label="Show me the features"
+    icon="fas fa-arrow-right" routerLink="/features"></button>
 </div>

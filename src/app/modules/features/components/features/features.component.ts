@@ -2,11 +2,11 @@ import { Component } from '@angular/core';
 import { AppConsts } from 'src/app/core/consts/app.consts';
 
 @Component({
-  selector: 'app-home',
-  templateUrl: './home.component.html',
-  styleUrls: ['./home.component.scss']
+  selector: 'app-features',
+  templateUrl: './features.component.html',
+  styleUrls: ['./features.component.scss']
 })
-export class HomeComponent {
+export class FeaturesComponent {
 
   readonly APP_NAME = AppConsts.APP_NAME;
 

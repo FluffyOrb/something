@@ -4,6 +4,7 @@ import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 import { CoreModule } from './core/core.module';
 import { SettingsService } from './core/services/settings/settings.service';
+import { FeaturesModule } from './modules/features/features.module';
 import { HomeModule } from './modules/home/home.module';
 
 @NgModule({
@@ -15,6 +16,7 @@ import { HomeModule } from './modules/home/home.module';
     BrowserModule,
     // app
     CoreModule,
+    FeaturesModule,
     HomeModule,
   ],
 })
