@@ -21,7 +21,7 @@ export class ThemeService {
 
   private readonly LS_KEY_THEME = 'app-theme';
   private readonly THEME_ELEMENT_ID = 'app-theme';
-  private readonly DEFAULT_THEME: AppTheme = AppTheme.LightBlue;
+  private readonly DEFAULT_THEME: AppTheme = AppTheme.DarkViolet;
 
   private themeSubject$: BehaviorSubject<AppTheme>;
 

@@ -1,7 +1,7 @@
 import { Injectable } from '@angular/core';
 import * as faker from 'faker';
 import { interval, merge, Observable, Subject } from 'rxjs';
-import { map, switchMap, take } from 'rxjs/operators';
+import { map, switchMap, take, delay } from 'rxjs/operators';
 import { Level } from 'src/app/core/models/api.model';
 import * as uuid from 'uuid';
 import { NotificationResponse } from '../../models/notification-api.model';
@@ -27,6 +27,7 @@ export class NotificationsApiMockService {
     return merge(
       this.fakeNotificationTrigger$,
       this.fakeNotificationsTrigger$.pipe(
+        delay(5000),
         switchMap(value => interval(250).pipe(take(value))),
         map(() => this.createRandomNotification()),
       ),
@@ -69,7 +70,7 @@ export class NotificationsApiMockService {
       timestamp: new Date(),
       level: 'MEDIUM',
       message: 'Here it goes!',
-      details: 'Expect a rain of totally random notifications in less than 10 seconds - you asked for this'
+      details: 'Expect a rain of totally random notifications in less than 5 seconds - you asked for this'
     });
     this.fakeNotificationsTrigger$.next(count);
   }
