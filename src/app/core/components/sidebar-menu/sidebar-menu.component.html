@@ -14,7 +14,7 @@
         [class.menu__btn--active]="(menuService.menuActiveRoute$ | async) === menuItem.routerLink"
         [routerLink]="menuItem.routerLink" (click)="onSidebarClose()">
         <i class="menu__btn__icon" [class]="menuItem.icon"></i>
-        <span class="menu__btn__label">{{menuItem.label | titlecase}}</span>
+        <span class="menu__btn__label">{{menuItem.label}}</span>
       </a>
     </div>
   </div>

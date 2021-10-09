@@ -1,0 +1,23 @@
+<h1>Frequently asked questions</h1>
+<div class="tile-container">
+  <ng-container *ngIf="loading$ | async; else loaded">
+    <div *ngFor="let item of faqLoadingItems" class="tile box-shadow--2 border-radius--1">
+      <div class="tile-content">
+        <h3>
+          <p-skeleton width="20rem"></p-skeleton>
+        </h3>
+        <div>
+          <p-skeleton></p-skeleton>
+        </div>
+      </div>
+    </div>
+  </ng-container>
+  <ng-template #loaded>
+    <div *ngFor="let item of faqItems$ | async" class="tile box-shadow--2 border-radius--1">
+      <div class="tile-content">
+        <h3 class="faq-item__question">{{item.question}}</h3>
+        <div class="faq-item__answer">{{item.answer}}</div>
+      </div>
+    </div>
+  </ng-template>
+</div>

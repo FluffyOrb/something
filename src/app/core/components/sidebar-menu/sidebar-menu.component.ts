@@ -9,7 +9,7 @@ import { MenuService } from '../../services/menu/menu.service';
 export class SidebarMenuComponent {
 
   constructor(
-    public menuService: MenuService,
+    public readonly menuService: MenuService,
   ) { }
 
   onSidebarClose() {

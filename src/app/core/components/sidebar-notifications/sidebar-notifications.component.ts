@@ -9,7 +9,7 @@ import { NotificationsService } from '../../services/notifications/notifications
 export class SidebarNotificationsComponent {
 
   constructor(
-    public notificationsService: NotificationsService,
+    public readonly notificationsService: NotificationsService,
   ) { }
 
   onSidebarClose() {

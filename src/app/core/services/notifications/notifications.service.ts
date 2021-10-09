@@ -19,7 +19,7 @@ export class NotificationsService {
   sidebarOpen = false;
 
   constructor(
-    private notificationsApiMockService: NotificationsApiMockService,
+    private readonly notificationsApiMockService: NotificationsApiMockService,
   ) {
     this.notifications$ = this.notificationsApiMockService.listenToNotifications();
     this.notifications$.subscribe(value => this.notifications.push(value));

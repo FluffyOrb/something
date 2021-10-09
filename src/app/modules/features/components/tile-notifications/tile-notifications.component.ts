@@ -12,7 +12,7 @@ export class TileNotificationsComponent {
   readonly APP_NAME = AppConsts.APP_NAME;
 
   constructor(
-    private notificationsApiMockService: NotificationsApiMockService
+    private readonly notificationsApiMockService: NotificationsApiMockService
   ) { }
 
   onAddLowLevelNotification() {

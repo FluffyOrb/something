@@ -20,7 +20,7 @@ export class NotificationsApiMockService {
   private readonly fakeNotificationsTrigger$ = new Subject<number>();
 
   constructor(
-    private utilsService: UtilsService,
+    private readonly utilsService: UtilsService,
   ) { }
 
   listenToNotifications(): Observable<NotificationResponse> {

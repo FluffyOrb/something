@@ -1,0 +1,25 @@
+.tile {
+  flex: 1 1 100%;
+  min-width: 0;
+}
+
+.faq-item {
+  margin-bottom: 2rem;
+
+  &__question,
+  &__answer {
+    &:before {
+      display: inline-block;
+      width: 1.5rem;
+      margin-right: 0.5rem;
+    }
+  }
+
+  &__question:before {
+    content: "Q:";
+  }
+
+  &__answer:before {
+    content: "A:";
+  }
+}
