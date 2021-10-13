@@ -1,0 +1,10 @@
+<div class="feature-container">
+  <div class="feature__description">
+    Check out how {{APP_NAME}} fits your screen in a responsive way.<br>Try to:
+    <ul>
+      <li>shrink browser window</li>
+      <li>scan QR code with your mobile and check how it scales to a small screen</li>
+    </ul>
+  </div>
+  <qr-code [value]="qrCodeValue" size="160" errorCorrectionLevel="M"></qr-code>
+</div>
