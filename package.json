@@ -1,5 +1,6 @@
 {
   "name": "something",
+  "description": "An extensive Angular app demo",
   "version": "0.0.0",
   "scripts": {
     "ng": "ng",
@@ -7,7 +8,8 @@
     "build": "ng build",
     "watch": "ng build --watch --configuration development",
     "test": "ng test",
-    "lint": "ng lint"
+    "lint": "ng lint",
+    "analyzeBundle": "ng build --stats-json && webpack-bundle-analyzer dist/something/stats.json"
   },
   "private": true,
   "dependencies": {
@@ -53,6 +55,7 @@
     "karma-coverage": "~2.0.3",
     "karma-jasmine": "~4.0.0",
     "karma-jasmine-html-reporter": "^1.5.0",
-    "typescript": "~4.3.2"
+    "typescript": "~4.3.2",
+    "webpack-bundle-analyzer": "^4.5.0"
   }
 }

@@ -20,6 +20,10 @@
         "build": {
           "builder": "@angular-devkit/build-angular:browser",
           "options": {
+            "allowedCommonJsDependencies": [
+              "qrcode",
+              "faker"
+            ],
             "outputPath": "dist/something",
             "index": "src/index.html",
             "main": "src/main.ts",
@@ -45,7 +49,7 @@
               "node_modules/primeicons/primeicons.css",
               "node_modules/primeflex/primeflex.css",
               "node_modules/@fortawesome/fontawesome-free/css/all.min.css",
-              "src/assets/fonts/montserrat/stylesheet.css",
+              "src/styles/fonts/montserrat/stylesheet.css",
               "src/styles.scss"
             ],
             "scripts": []
@@ -55,7 +59,7 @@
               "budgets": [
                 {
                   "type": "initial",
-                  "maximumWarning": "500kb",
+                  "maximumWarning": "3mb",
                   "maximumError": "10mb"
                 },
                 {
