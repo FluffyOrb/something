@@ -26,7 +26,7 @@
     "@types/faker": "^5.5.8",
     "@types/uuid": "^8.3.1",
     "faker": "^5.5.3",
-    "ng-qrcode": "^5.1.1",
+    "ng-qrcode": "^5.0.0",
     "primeflex": "^3.0.1",
     "primeicons": "^4.1.0",
     "primeng": "^12.1.1",
