@@ -1,5 +1,5 @@
 import { Injectable } from '@angular/core';
-import { AppConsts } from 'src/app/core/consts/app.consts';
+import { AppConsts } from '../../../../core/consts/app.consts';
 import { FaqItemsResponse } from '../../models/faq.model';
 
 @Injectable({

@@ -2,8 +2,8 @@ import { Injectable } from '@angular/core';
 import * as faker from 'faker';
 import { interval, merge, Observable, Subject } from 'rxjs';
 import { map, switchMap, take, delay } from 'rxjs/operators';
-import { Level } from 'src/app/core/models/api.model';
 import * as uuid from 'uuid';
+import { Level } from '../../models/api.model';
 import { NotificationResponse } from '../../models/notification-api.model';
 import { UtilsService } from '../utils/utils.service';
 

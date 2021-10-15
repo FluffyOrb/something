@@ -1,7 +1,5 @@
-@use "sass:math";
-
-@import "/src/styles/app-consts.scss";
-@import "/src/styles/shared/menu-shared.scss";
+@import '../../../../styles/app-consts.scss';
+@import '../../../../styles/shared/menu-shared.scss';
 
 @mixin text-transition {
   transition: 0.25s ease-out font, 0.1s ease-out color;
@@ -69,7 +67,7 @@
   }
 
   &--small {
-    height: math.div($header-height, 2);
+    height: $header-height / 2;
 
     .logo {
       height: 2.4rem;

@@ -1,5 +1,5 @@
 import { Component } from '@angular/core';
-import { AppConsts } from 'src/app/core/consts/app.consts';
+import { AppConsts } from '../../../../core/consts/app.consts';
 
 @Component({
   selector: 'app-home',

@@ -1,6 +1,6 @@
 import { Component } from '@angular/core';
-import { AppConsts } from 'src/app/core/consts/app.consts';
-import { NotificationsApiMockService } from 'src/app/core/services/notifications-api-mock/notifications-api-mock.service';
+import { AppConsts } from '../../../../core/consts/app.consts';
+import { NotificationsApiMockService } from '../../../../core/services/notifications-api-mock/notifications-api-mock.service';
 
 @Component({
   selector: 'app-tile-notifications',

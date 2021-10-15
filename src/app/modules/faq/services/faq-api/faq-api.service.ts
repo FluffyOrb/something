@@ -1,7 +1,7 @@
 import { HttpClient } from '@angular/common/http';
 import { Inject, Injectable } from '@angular/core';
 import { Observable } from 'rxjs';
-import { API_BASE_URL } from 'src/app/core/consts/configuration.consts';
+import { API_BASE_URL } from '../../../../core/consts/configuration.consts';
 import { FaqItemsResponse } from '../../models/faq.model';
 
 @Injectable({

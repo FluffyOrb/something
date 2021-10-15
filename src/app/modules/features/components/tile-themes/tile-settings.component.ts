@@ -1,6 +1,6 @@
 import { Component } from '@angular/core';
-import { AppConsts } from 'src/app/core/consts/app.consts';
-import { SettingsService } from 'src/app/core/services/settings/settings.service';
+import { AppConsts } from '../../../../core/consts/app.consts';
+import { SettingsService } from '../../../../core//services/settings/settings.service';
 
 @Component({
   selector: 'app-tile-settings',
