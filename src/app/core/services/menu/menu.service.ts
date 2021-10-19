@@ -12,7 +12,7 @@ export class MenuService {
   readonly menuItems: MenuItem[] = [
     { label: 'Home', icon: 'fas fa-home', routerLink: 'home' },
     { label: 'Features', icon: 'fas fa-shapes', routerLink: 'features' },
-    { label: 'FAQ', icon: 'fas fa-question-circle', routerLink: 'faq' },
+    { label: 'FAQ', icon: 'fas fa-question-circle', routerLink: 'questions' },
   ];
 
   readonly menuActiveRoute$: Observable<string>;
