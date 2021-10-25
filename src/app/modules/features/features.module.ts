@@ -7,13 +7,13 @@ import { FeaturesComponent } from './components/features/features.component';
 import { TileLayoutResponsivenessComponent } from './components/tile-layout-responsiveness/tile-layout-responsiveness.component';
 import { TileMoreFeaturesComponent } from './components/tile-more-features/tile-more-features.component';
 import { TileNotificationsComponent } from './components/tile-notifications/tile-notifications.component';
-import { TileSettingsComponent } from './components/tile-themes/tile-settings.component';
+import { TileThemesComponent } from './components/tile-themes/tile-themes.component';
 
 @NgModule({
   declarations: [
     FeaturesComponent,
     TileNotificationsComponent,
-    TileSettingsComponent,
+    TileThemesComponent,
     TileMoreFeaturesComponent,
     TileLayoutResponsivenessComponent,
   ],

@@ -3,11 +3,11 @@ import { AppConsts } from 'src/app/core/consts/app.consts';
 import { SettingsService } from 'src/app/core/services/settings/settings.service';
 
 @Component({
-  selector: 'app-tile-settings',
-  templateUrl: './tile-settings.component.html',
-  styleUrls: ['./tile-settings.component.scss']
+  selector: 'app-tile-themes',
+  templateUrl: './tile-themes.component.html',
+  styleUrls: ['./tile-themes.component.scss']
 })
-export class TileSettingsComponent {
+export class TileThemesComponent {
 
   readonly APP_NAME = AppConsts.APP_NAME;
 
