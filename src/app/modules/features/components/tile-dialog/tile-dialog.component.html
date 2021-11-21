@@ -1,0 +1,39 @@
+<div class="mb-4">Check out how {{APP_NAME}} brings you to another level.</div>
+<button pButton class="mr-2 mb-2" type="button" label="Beginner level" icon="fas fa-angle-up"
+  (click)="smallDialogOpen = true"></button>
+<button pButton class="mb-2" type="button" label="Pro level" icon="fas fa-angle-double-up"
+  (click)="largeDialogOpen = true"></button>
+
+<p-dialog [(visible)]="smallDialogOpen" appendTo="body">
+  <ng-template pTemplate="header">
+    <div>
+      <i class="fas fa-level-up-alt"></i>
+      <span class="ml-2">Yeah, it's definitely another level</span>
+    </div>
+  </ng-template>
+  <div>
+    Just some info to show, nothing more.
+  </div>
+  <p-footer>
+    <button pButton type="button" label="OK, got it" icon="fas fa-check"
+      (click)="smallDialogOpen = false"></button>
+  </p-footer>
+</p-dialog>
+<p-dialog [(visible)]="largeDialogOpen" [modal]="true" [draggable]="false"
+  [resizable]="false" [closeOnEscape]="false" [closable]="false" appendTo="body">
+  <ng-template pTemplate="header">
+    <div>
+      <i class="fas fa-skull-crossbones"></i>
+      <span class="ml-2">Critically important information</span>
+    </div>
+  </ng-template>
+  <div>
+    This information is critical.<br>
+    You cannot either drag or resize this dialog.<br>
+    Further system operation is impossible until you close this dialog.
+  </div>
+  <p-footer>
+    <button pButton type="button" label="OK, just close it" icon="fas fa-check"
+      (click)="largeDialogOpen = false"></button>
+  </p-footer>
+</p-dialog>
